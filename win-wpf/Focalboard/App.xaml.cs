@@ -88,7 +88,7 @@ namespace Focalboard {
                 appDataFolder = ApplicationData.Current.LocalFolder.Path;
             } catch {
                 var documentsFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-                appDataFolder = Path.Combine(documentsFolder, "Focalboard");
+                appDataFolder = Path.Combine(documentsFolder, "笔记库", "Focalboard");
                 Directory.CreateDirectory(appDataFolder);
                 // Not a UWP app, store in Documents
 
